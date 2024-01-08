@@ -440,7 +440,20 @@ class _TimePickerSpinnerState extends State<TimePickerSpinner> {
           late String text;
           if (widget.locale!.languageCode == "ar") {
             text = index == 1 ? 'ص' : (index == 2 ? 'م' : '');
-          } else {
+          } else if(widget.locale!.languageCode == "id"){
+            text = index == 1 ? 'AM_1' : (index == 2 ? 'PM_1' : '');
+          } else if(widget.locale!.languageCode == "ms"){
+            text = index == 1 ? 'AM_2' : (index == 2 ? 'PM_2' : '');
+          } else if(widget.locale!.languageCode == "fil"){
+            text = index == 1 ? 'AM_3' : (index == 2 ? 'PM_3' : '');
+          } else if(widget.locale!.languageCode == "zh"){
+            text = index == 1 ? 'AM_4' : (index == 2 ? 'PM_4' : '');
+          } else if(widget.locale!.languageCode == "vi"){
+            text = index == 1 ? 'AM_5' : (index == 2 ? 'PM_5' : '');
+          } else if(widget.locale!.languageCode == "th"){
+            text = index == 1 ? 'AM_6' : (index == 2 ? 'PM_6' : '');
+          }
+          else {
             text = index == 1 ? 'AM' : (index == 2 ? 'PM' : '');
           }
           return Container(
