@@ -447,7 +447,7 @@ class _TimePickerSpinnerState extends State<TimePickerSpinner> {
           } else if(widget.locale!.languageCode == "fil"){
             text = index == 1 ? 'AM_3' : (index == 2 ? 'PM_3' : '');
           } else if(widget.locale!.languageCode == "zh"){
-            text = index == 1 ? 'AM_4' : (index == 2 ? 'PM_4' : '');
+            text = index == 1 ? '上午' : (index == 2 ? '下午' : '');
           } else if(widget.locale!.languageCode == "vi"){
             text = index == 1 ? 'AM_5' : (index == 2 ? 'PM_5' : '');
           } else if(widget.locale!.languageCode == "th"){
